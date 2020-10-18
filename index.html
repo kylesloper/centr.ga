@@ -7,15 +7,34 @@
 
 </head>
 <body>
+    <div id="cursor" class="cursor"></div>
+    <div id="cursorr" class="cursor-follow"></div>
+
         <div>
             <span><img style=" width: 70%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);" src="img/LOGO/CROP/TRANS/CROP-Black,trans.png"></span>
             <div class="logo-blink" id="loading">
                 <span style="position: absolute; left: 50%; top: 70%; transform: translate(-50%, -50%);"><p class=" headline blink" style="visibility: none; ">Use a Centr. link to access a site</p></span>
                 
             </div>
-                           <a href="dash"> <span style="position: absolute; left: 0; bottom: 0; padding: 10px;"><p class="headline" ">Add a link</p></span> </a>
+                           <a href="cockpit" class="link"> <span style="position: absolute; left: 0; bottom: 0; padding: 10px;"><p class="headline">Add a link</p></span> </a>
 
         </div>
+
+        <script>
+let mouseCursor = document.querySelector(".cursor");
+let navLinks = document.querySelector('.nav-links li');
+
+
+window.addEventListener("mousemove", cursor);
+
+function cursor (e) {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
+}
+
+
+
+        </script>
 
         
     <script>  (function blink() {
@@ -147,6 +166,8 @@ button {
 
 </body>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/cursor.js"></script>
+
 <!-- jQuery latest version -->
 <script src="assets/js/vendor/jquery-3.1.1.min.js"></script>
 <!-- Bootstrap js -->

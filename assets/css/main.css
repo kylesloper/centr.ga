@@ -1,11 +1,5 @@
 @import url(fontawesome-all.min.css);
 
-/*
-	Hyperspace by Kyle Sloper
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 ::-moz-selection { /* Code for Firefox */
     color: #000000;
   background: rgba(216, 216, 216, 0.37);
@@ -81,6 +75,12 @@ input, select, textarea {
 	appearance: none;
 }
 
+html,
+body{
+	overflow: hidden;
+	cursor: none;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -120,7 +120,41 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
-    }
+	}
+	
+	.cursor{
+		width: 0.7rem;
+		height: 0.7rem;
+		background: black;		
+		border-radius: 50px;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		pointer-events: none;
+
+	}
+
+	.cursor-follow{
+		width: 2rem;
+		height: 2rem;
+		border: 2px black solid;
+		border-radius: 50px;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		pointer-events: none;
+		
+
+		transition: all ease-out .2s;
+
+	}
+
+	.link-grow-follow{
+		transform: scale(2);
+		background: black;
+	}
+
+	a{
+		cursor: none;
+	}
     
 
 
