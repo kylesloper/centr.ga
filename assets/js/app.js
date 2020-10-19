@@ -109,13 +109,6 @@ $(".logo-blink").css({"opacity":"0","pointer-events":"none"});
 }, 200);
 
 
-    setTimeout(function(){
-$(".modalDialogload").css({"opacity":"0","pointer-events":"none"});
-window.scrollTo(0,0);
-
-}, 2000);
-
-
 
 })(jQuery);
 

@@ -147,6 +147,27 @@ body{
 
 	}
 
+	.modalWhite {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #fff;
+		z-index: 9999;
+		opacity:0;
+		-webkit-transition: opacity 150ms ease-in;
+		-moz-transition: opacity 150ms ease-in;
+		transition: opacity 150ms ease-in;
+		pointer-events: none;
+		
+	  
+		  
+	  
+	  
+	  
+	  }
+
 	.link-grow-follow{
 		transform: scale(2);
 		background: black;
