@@ -6,11 +6,12 @@ body{
 
 .trail { /* className for the trail elements */
     position: absolute;
+    bottom: 0;
     height: 20rem; width: 20rem;
     border-radius: 100%;
-  background: rgba(0, 0, 0, 0.274);
-  border: 0.7px black solid;
-  transform: translate(-50%, -50%)
+    background: rgba(0, 0, 0, 0.274);
+    border: 0.7px black solid;
+    transform: translate(-50%, -50%)
 
   }
 
